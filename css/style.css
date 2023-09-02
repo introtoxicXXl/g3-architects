@@ -21,6 +21,9 @@
   background: #cf7106;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.text-gray {
+  color: #727272;
+}
 /* header style */
 header {
   background: rgba(255, 144, 14, 0.1);
@@ -71,7 +74,6 @@ nav ul li a {
 }
 .banner-description {
   margin-top: 20px;
-  color: #727272;
   font-size: 1rem;
   font-weight: 400;
   line-height: 26px;
@@ -109,25 +111,64 @@ main {
   margin-bottom: 20px;
 }
 .quick {
-  color: #727272;
   font-weight: 500;
 }
 .team {
   color: #ff900e;
 }
 .team-content p {
-  color: #727272;
   font-size: 1rem;
   font-weight: 400;
   line-height: 26px;
 }
 /* team style end */
 
+/* facts style start */
+.fact-section {
+  padding: 50px 0px;
+}
+.fact-title {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.fact-section p {
+  margin-bottom: 20px;
+  line-height: 26px;
+}
+.fact-card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.fact-card-container .card {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  width: 190px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+}
+.fact-card-container .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* facts style end */
+
 /* Mobile device responsive */
 @media screen and (max-width: 576px) {
-    .btn-primary{
-        padding: 10px 15px;
-    }
+  .btn-primary {
+    padding: 10px 15px;
+  }
   nav {
     flex-direction: column;
     padding: 10px 20px;
@@ -156,13 +197,16 @@ main {
     margin-top: 20px;
     font-size: 1.8rem;
   }
+  .fact-title {
+    font-size: 2rem;
+  }
 }
 
 /* medium device responsive */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .btn-primary{
-        padding: 15px 20px;
-    }
+  .btn-primary {
+    padding: 15px 20px;
+  }
   nav {
     padding: 10px 20px;
   }
@@ -170,7 +214,8 @@ main {
     font-size: 3rem;
     margin-top: 20px;
   }
-  .banner, .team-content {
+  .banner,
+  .team-content {
     padding: 0 25px;
   }
 }
