@@ -223,7 +223,7 @@ main {
   padding: 50px 0px;
   text-align: center;
 }
-.sponsor-section h2 {
+.sponsor-title {
   margin-bottom: 20px;
   color: #131313;
   font-size: 2.8rem;
@@ -244,6 +244,18 @@ main {
   height: 50px;
 }
 /* sponsor style end */
+/* footer style start  */
+footer{
+    background: #FFF4E7;
+}
+footer p{
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    font-size: 1.25rem;
+}
+/* footer style end */
 
 /* Mobile device responsive */
 @media screen and (max-width: 576px) {
@@ -285,6 +297,9 @@ main {
     width: 100px;
     height: 30px;
   }
+  .sponsor-title{
+    font-size: 1.8rem;
+  }
   .feature-section{
     flex-direction: column;
     padding: 20px 0;
@@ -303,6 +318,9 @@ main {
   }
   .fact-section p{
     text-align: center;
+  }
+  footer p{
+    font-size: 1rem;
   }
 }
 
@@ -338,5 +356,8 @@ main {
   }
   .feature-img{
     align-items: center;
+  }
+  footer p{
+    font-size: 1rem;
   }
 }
