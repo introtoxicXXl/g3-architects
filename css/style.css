@@ -7,6 +7,10 @@
     font-family: 'Work Sans', sans-serif;
 }
 /* nav style */
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -30,4 +34,35 @@ nav ul li a{
     color: #424242;
     font-size: 1.02rem;
     margin-right: 1.03rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile device responsive */
+@media screen and (max-width:556px) {
+    nav{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    nav ul{
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+}
+
+/* medium device responsive */
+@media screen and (min-width:556px) and (max-width:992px) {
+    nav{
+        padding: 10px 20px;
+    }
 }
